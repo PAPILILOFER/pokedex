@@ -59,12 +59,12 @@ npm run build
 <h4 id="solución">Solución:</h4>
 <p>Se corrigió la propiedad <code>output_location</code> en el workflow para apuntar a la carpeta correcta del build.</p>
 <hr>
-<h3 id="problemas-con-rutas-y-recursos">7. Problemas con rutas y recursos</h3>
+<h3 id="problemas-con-rutas-y-recursos">6. Problemas con rutas y recursos</h3>
 <p>Durante el despliegue se presentaron errores relacionados con las rutas de la aplicación, especialmente porque Angular estaba generando URLs incorrectas con <code>/pokedex-angular/</code>.</p>
 <p>Esto provocaba errores 404 en archivos como scripts, estilos e imágenes.</p>
 <p>Para solucionarlo se ajustaron las rutas a una estructura más simple usando <code>assets/</code> sin prefijos adicionales, asegurando que los recursos se cargaran correctamente tanto en local como en producción.</p>
 <hr>
-<h3 id="configuración-de-seguridad-headers-http">8. Configuración de seguridad (headers HTTP)</h3>
+<h3 id="configuración-de-seguridad-headers-http">7. Configuración de seguridad (headers HTTP)</h3>
 <p>Se añadieron encabezados de seguridad para mejorar la protección de la aplicación desde Azure mediante el archivo:</p>
 <p>📄 <code>staticwebapp.config.json</code></p>
 <p>{<br>
@@ -79,7 +79,7 @@ npm run build
 }</p>
 <p>Durante esta parte se presentaron bloqueos de imágenes externas debido a la CSP, lo que llevó a ajustar los dominios permitidos para que la aplicación pudiera consumir correctamente recursos como sprites de Pokémon.</p>
 <hr>
-<h3 id="prueba-de-seguridad">9. Prueba de seguridad</h3>
+<h3 id="prueba-de-seguridad">8. Prueba de seguridad</h3>
 <p>Se utilizó la herramienta:</p>
 <p><a href="https://securityheaders.com/">https://securityheaders.com/</a></p>
 <p>El análisis permitió verificar que los encabezados de seguridad estaban correctamente aplicados, mejorando la calificación general del sitio.</p>
